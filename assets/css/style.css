@@ -1,0 +1,307 @@
+
+/*----------
+# General
+----------*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 100%;
+}
+
+:root  {
+    --dark-bg: #000D16;
+    --teal-bg: #2C3E50;
+    --white-font: #ffffff;
+    --gray-font:#2f4f4f;
+    --blue-effect: #0056b3;
+    --lightblue-effect: #54b3d6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: var(--white-font);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*----------
+# Sections
+----------*/
+.section-container-bg {
+    width: 95%;
+    max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.aboutMe,
+.projects,
+.contact,
+.footer {
+    background-color: var(--dark-bg);
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+/*----------
+# Navbar
+----------*/
+.navbar {
+    padding-top: 40px;
+}
+
+.site-logo-img {
+    width: 100px;
+}
+
+.nav-menu-list li {
+    position: relative;
+}
+
+.nav-menu-link {
+    color: var(--white-font);
+    font-size: 20px;
+    transition: all ease .3s;
+}
+
+.nav-menu-link:hover {
+    color: var(--lightblue-effect)
+}
+
+.nav-menu-link:after {
+    content: "";
+    display: block;
+    margin: 15px auto;
+    position: absolute;
+    width: 0%;
+    transition: width .3s;;
+}
+
+.nav-menu-link:hover:after {
+    left: 65%;
+    width: 55%;
+    height: 5px;
+    display: block;
+    border-radius: 10px;
+    transition: width .3s;
+    transform: translateX(-50%);
+    background-color: var(--lightblue-effect);
+}
+
+/*----------
+# Landing
+----------*/
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/hero-bg.jpg") top left no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 91.406px);
+    padding: 0px;
+}
+
+.landing-text-item {
+        list-style-type: none;
+}
+
+@media (max-width: 992px) {
+    .header {
+        background: url("../img/hero-bg.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+    .landing-text {
+        min-width: 340px;
+    }
+
+    .landing-text-head {
+        font-size: 40px;
+    }
+
+    .landing-text-item {  
+        font-size: 28px;
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 993px) {
+    .landing-text {
+        padding-left: 250px;
+        min-width: 750px;
+    }
+
+    .landing-text-head {
+        font-size: 60px;
+    }
+
+    .landing-text-item {  
+        font-size: 40px;
+        padding-left: 90px;
+    }
+}
+
+/*----------
+# Buttons
+----------*/
+.button {
+    font-weight: 400;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all ease .3s;
+    color: var(--white-font);
+    box-shadow: inset 0 0 0 2px var(--teal-bg);
+    background: none;
+    
+}
+
+.button:hover {
+    transform: scale(1.075);
+    background: var(--teal-bg);
+    color: var(--lightblue-effect);
+}
+
+.button-large  {
+    font-size: 22px;
+    padding: 20px 42px;
+}
+
+.know-me-button,
+.see-projects-button {
+    text-align: center;
+    padding-top: 25px;
+}
+
+/*----------
+# About Me
+----------*/
+.aboutMe-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 993px) {
+    .aboutMe-img {
+        width: 450px;
+        border-radius: 50px;
+        padding: 15px;
+    }
+
+    .aboutMe-s1 {
+        font-size: 26px;
+        color: var(--white-font);
+    }
+
+    .aboutMe-s2 {
+        font-size: 32px;
+        font-weight: 500;
+        color: var(--lightblue-effect);
+    }
+
+    .aboutMe-h4 {
+        font-size: 22px;
+        color: var(--gray-font);
+        padding-top: 20px;
+    }
+
+    .aboutMe-p {
+        font-size: 24px;
+        color: var(--white-font);
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutMe-img {
+        width: 350px;
+        border-radius: 30px;
+        padding: 25px;
+    }
+
+    .aboutMe-text {
+        padding-top: 14px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .aboutMe-s1 {
+        font-size: 22px;
+        color: var(--white-font);
+    }
+
+    .aboutMe-s2 {
+        font-size: 28px;
+        font-weight: 500;
+        color: var(--lightblue-effect);
+    }
+
+    .aboutMe-h4 {
+        font-size: 18px;
+        color: var(--gray-font);
+        padding-top: 20px;
+    }
+
+    .aboutMe-p {
+        font-size: 20px;
+    }
+
+}
+
+.aboutMe-s,
+.aboutMe-h4,
+.aboutMe-p {
+    padding-bottom: 15px;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around    
+}
+
+.html5,
+.css3,
+.bootstrap,
+.javascript,
+.git,
+.mongodb,
+.postman,
+.express,
+.react,
+.node,
+.php,
+.python,
+.django {
+    padding: 5px;
+    width: 50px;
+}
