@@ -16,7 +16,8 @@
     --dark-bg: #000D16;
     --teal-bg: #2C3E50;
     --white-font: #ffffff;
-    --gray-font:#2f4f4f;
+    --gray-font: #2f4f4f;
+    --green-font: #2D9E78;
     --blue-effect: #0056b3;
     --lightblue-effect: #54b3d6;
 }
@@ -47,6 +48,7 @@ a {
 .section-title {
     text-align: center;
     font-size: 36px;
+    padding-bottom: 35px;
 }
 
 .aboutMe,
@@ -56,13 +58,27 @@ a {
     background-color: var(--dark-bg);
 }
 
-.aboutMe {
+.aboutMe,
+.projects {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 0px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 0px;
+}
+
+.footer {
+    text-align: center;
 }
 
 /*----------
@@ -195,10 +211,15 @@ a {
     padding: 20px 42px;
 }
 
-.know-me-button,
-.see-projects-button {
+.see-projects-btn,
+.email-me-btn {
     text-align: center;
-    padding-top: 25px;
+    padding: 25px 0px;
+}
+
+.contact-me-btn {
+    text-align: center;
+    padding: 50px 0px;
 }
 
 /*----------
@@ -213,7 +234,7 @@ a {
 @media (min-width: 993px) {
     .aboutMe-img {
         width: 450px;
-        border-radius: 50px;
+        border-radius: 40px;
         padding: 15px;
     }
 
@@ -243,14 +264,12 @@ a {
 @media (max-width: 992px) {
     .aboutMe-img {
         width: 350px;
-        border-radius: 30px;
+        border-radius: 40px;
         padding: 25px;
     }
 
     .aboutMe-text {
-        padding-top: 14px;
-        padding-left: 28px;
-        padding-right: 28px;
+        padding: 14px 28px 0px;
     }
 
     .aboutMe-s1 {
@@ -304,4 +323,53 @@ a {
 .django {
     padding: 5px;
     width: 50px;
+}
+
+/*----------
+# Projects
+----------*/
+
+.card {
+    border-radius: 20px;
+    background-color: var(--teal-bg);
+}
+
+.card-title {
+    color: var(--lightblue-effect);
+}
+
+.made-with {
+    color: var(--green-font);
+}
+
+
+/*----------
+# Contact
+----------*/
+
+.contact-h5 {
+    text-align: center;
+}
+
+.socmed-contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 0px;
+}
+
+.socmed-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.socmed-icon-contact {
+     padding: 3px 0px;
+}
+
+.socmed-text {
+     color:var(--white-font);
+     font-size: 19px;
+     padding-left: 3px;
 }
