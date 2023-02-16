@@ -73,7 +73,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 102px);
     padding: 0px;
 }
 
@@ -90,6 +90,11 @@ a {
 
 .site-logo-img {
     width: 100px;
+    transition: all ease .3s
+}
+
+.site-logo-img:hover {
+    transform: scale(1.25);
 }
 
 .nav-menu-list li {
@@ -191,7 +196,7 @@ a {
 ----------*/
 .button {
     font-weight: 400;
-    border-radius: 25px;
+    border-radius: 30px;
     display: inline-block;
     transition: all ease .3s;
     color: var(--white-font);
@@ -208,7 +213,12 @@ a {
 
 .button-large  {
     font-size: 22px;
-    padding: 20px 42px;
+    padding: 20px 40px;
+}
+
+.resume-btn  {
+    font-size: 20px;
+    padding: 10px 20px;
 }
 
 .see-projects-btn,
@@ -322,7 +332,7 @@ a {
 .python,
 .django {
     padding: 5px;
-    width: 50px;
+    width: 45px;
 }
 
 /*----------
@@ -334,8 +344,13 @@ a {
     background-color: var(--teal-bg);
 }
 
+.fa-external-link {
+    font-size: 24px;
+}
+
 .card-title {
     color: var(--lightblue-effect);
+    font-size: 26px;
 }
 
 .made-with {
@@ -372,4 +387,17 @@ a {
      color:var(--white-font);
      font-size: 19px;
      padding-left: 3px;
+}
+
+/*----------
+# Footer
+----------*/
+
+.backtop {
+    font-size: 38px;
+    transition: all ease .3s
+}
+
+.backtop:hover {
+    transform: scale(1.5);
 }

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-	<title>Paul Santos | Web  Dev</title>
+	<title>Paul Santos | Web Dev</title>
 	<meta name="author" content="Paul Santos"/>
     <meta name="description" content="Online Portfolio"/>
     <meta name="keywords" content="Paul Santos, Web Designer, Web Developer, Developer Portfolio"/>
@@ -18,35 +18,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<header class="header" id="header">
         <div class="section-container-bg">
+
             <nav class="navbar navbar-expand-lg navbar-dark nav-menu">
                 <a class="navbar-brand site-logo" href="#">
-                	<img src="./assets/img/sitelogo.png" class="site-logo-img img-fluid">
+                	<img src="./assets/img/sitelogo.png" class="site-logo-img img-fluid" alt="sitelogo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                	<span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="container-fluid">
                         <ul class="nav-menu-list navbar-nav ml-auto">
                             <li class="nav-item ml-auto py-3 pl-5">
-                                <a class="nav-menu-link" href="#">.home { }</a>
+                                <a class="nav-menu-link" href="#aboutMe">aboutMe { }</a>
                             </li>
                             <li class="nav-item ml-auto py-3 pl-5">
-                                <a class="nav-menu-link" href="#aboutMe">.aboutMe { }</a>
+                                <a class="nav-menu-link" href="#projects">projects { }</a>
                             </li>
                             <li class="nav-item ml-auto py-3 pl-5">
-                                <a class="nav-menu-link" href="#projects">.projects { }</a>
+                                <a class="nav-menu-link" href="#contact">contact { }</a>
                             </li>
-                            <li class="nav-item ml-auto py-3 pl-5">
-                                <a class="nav-menu-link" href="#contact">.contact { }</a>
+                            <li class="nav-item ml-auto py-2 pl-5">
+                                <a class="button resume-btn" href="./assets/Santos_John_Paul_CV.pdf" target="_blank">Resume</a>
                             </li>
                         </ul>
                     </div>
@@ -68,91 +70,92 @@
     </header>
 
     <section id="aboutMe" class="aboutMe">
-      <div class="container">
+        <div class="container">
 
-        <div class="section-title">
-            <h2 class="pt-4 pt-lg-0">
-                <i class="fa-regular fa-user"></i>
-                &nbsp; About Me
-            </h2>
-        </div>
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="pt-4 pt-lg-0">
+                    <i class="fa-regular fa-user"></i>
+                    &nbsp; About Me
+                </h2>
+            </div>
 
-        <div class="row">
-          
-          <div class="aboutMe-text col-lg-7 order-2 order-md-2 order-lg-1">
-          	<h4 class="aboutMe-h4">
-            	Hi there!
-            </h4>
-                <div class="aboutMe-s">
-                    <span class="aboutMe-s1">You can call me</span>
-                    <span class="aboutMe-s2">Paul</span>
-                    <span class="aboutMe-s1">.</span>
+            <div class="row">
+                <div class="aboutMe-text col-lg-7 order-2 order-md-2 order-lg-1" data-aos="fade-up">
+                    <h4 class="aboutMe-h4">
+                	   Hi there!
+                    </h4>
+                    <div class="aboutMe-s">
+                        <span class="aboutMe-s1">You can call me</span>
+                        <span class="aboutMe-s2">Paul</span>
+                        <span class="aboutMe-s1">.</span>
+                    </div>
+                    <p class="aboutMe-p">
+                        I'm a career shifter coming from a nine-year experience in Service Engineering and Management.
+                    </p>
+                    <p class="aboutMe-p">
+                        Now I have started my career in programming and aiming to be an expert in web development.
+                    </p>
+
+                    <h4 class="aboutMe-h4">
+                        These are the technologies I am currently working with:
+                    </h4>
+
+                    <div class="technologies">
+                        <a href="https://dev.w3.org/html5/spec-LC/" title="HTML" target="_blank">
+                            <img class="html5" src="assets/img/icons/html5.png" alt="HTML">
+                        </a>
+                        <a href="https://www.w3.org/Style/CSS/" title="CSS" target="_blank">
+                            <img class="css3" src="assets/img/icons/css3.png" alt="CSS">
+                        </a>
+                        <a href="https://getbootstrap.com/" title="Bootstrap" target="_blank">
+                            <img class="bootstrap" src="assets/img/icons/bootstrap.png" alt="Bootstrap">
+                        </a>
+                        <a href="https://www.javascript.com/" title="Javascript" target="_blank">
+                            <img class="javascript" src="assets/img/icons/javascript.png" alt="Javascript">
+                        </a>
+                        <a href="https://git-scm.com/" title="Git" target="_blank">
+                            <img class="git" src="assets/img/icons/git.png" alt="Git">
+                        </a>
+                    </div>
+
+                    <div class="technologies">
+                        <a href="https://www.postman.com/" title="Postman" target="_blank">
+                            <img class="postman" src="assets/img/icons/postman.png" alt="Postman">
+                        </a>
+                        <a href="https://www.mongodb.com/" title="MongoDB" target="_blank">
+                            <img class="mongodb" src="assets/img/icons/mongodb.png" alt="MongoDB">
+                        </a>
+                        <a href="https://expressjs.com/" title="Express JS" target="_blank">
+                            <img class="express" src="assets/img/icons/express.png" alt="Express JS">
+                        </a>
+                        <a href="https://reactjs.org/" title="React JS" target="_blank">
+                            <img class="react" src="assets/img/icons/react.png" alt="React JS">
+                        </a>
+                        <a href="https://nodejs.org/en/" title="Node JS" target="_blank">
+                            <img class="node" src="assets/img/icons/node.png" alt="Node JS">
+                        </a>
+                    </div>
+
+                    <div class="technologies">
+                        <a href="https://www.php.net/" title="PHP" target="_blank">
+                            <img class="php" src="assets/img/icons/php.png" alt="PHP">
+                        </a>
+                        <a href="https://www.python.org/" title="Python" target="_blank">
+                            <img class="python" src="assets/img/icons/python.png" alt="Python">
+                        </a>
+                        <a href="https://www.djangoproject.com/" title="Django" target="_blank">
+                            <img class="django" src="assets/img/icons/django.png" alt="Django">
+                        </a>
+                    </div>
+
                 </div>
-                <p class="aboutMe-p">
-                    I'm a career shifter coming from a nine-year experience in Service Engineering and Management.
-                </p>
-                <p class="aboutMe-p">
-                    Now I have started my career in programming and aiming to be an expert in web development.
-                </p>
 
-                <h4 class="aboutMe-h4">
-                    These are the technologies I am currently working with:
-                </h4>
-
-                <div class="technologies">
-                    <a href="https://dev.w3.org/html5/spec-LC/" title="HTML" target="_blank">
-                        <img class="html5" src="assets/img/icons/html5.png">
-                    </a>
-                    <a href="https://www.w3schools.com/css/" title="CSS" target="_blank">
-                        <img class="css3" src="assets/img/icons/css3.png">
-                    </a>
-                    <a href="https://getbootstrap.com/" title="Bootstrap" target="_blank">
-                        <img class="bootstrap" src="assets/img/icons/bootstrap.png">
-                    </a>
-                    <a href="https://www.javascript.com/" title="Javascript" target="_blank">
-                        <img class="javascript" src="assets/img/icons/javascript.png">
-                    </a>
-                    <a href="https://git-scm.com/" title="Git" target="_blank">
-                        <img class="git" src="assets/img/icons/git.png">
-                    </a>
+                <div class="aboutMe-img-container col-lg-5 order-1 order-md-1 order-lg-2" data-aos="zoom-in">
+                    <img src="./assets/img/profile-img.jpg" class="img-fluid aboutMe-img" alt="Paul Santos">
                 </div>
+            </div>
 
-                <div class="technologies">
-                    <a href="https://www.postman.com/" title="Postman" target="_blank">
-                        <img class="postman" src="assets/img/icons/postman.png">
-                    </a>
-                    <a href="https://www.mongodb.com/" title="MongoDB" target="_blank">
-                        <img class="mongodb" src="assets/img/icons/mongodb.png">
-                    </a>
-                    <a href="https://expressjs.com/" title="Express JS" target="_blank">
-                        <img class="express" src="assets/img/icons/express.png">
-                    </a>
-                    <a href="https://reactjs.org/" title="React JS" target="_blank">
-                        <img class="react" src="assets/img/icons/react.png">
-                    </a>
-                    <a href="https://nodejs.org/en/" title="Node JS" target="_blank">
-                        <img class="node" src="assets/img/icons/node.png">
-                    </a>
-                </div>
-
-                <div class="technologies">
-                    <a href="https://www.php.net/" title="PHP" target="_blank">
-                        <img class="php" src="assets/img/icons/php.png">
-                    </a>
-                    <a href="https://www.python.org/" title="Python" target="_blank">
-                        <img class="python" src="assets/img/icons/python.png">
-                    </a>
-                    <a href="https://www.djangoproject.com/" title="Django" target="_blank">
-                        <img class="django" src="assets/img/icons/django.png">
-                    </a>
-                </div>
-
-          </div>
-          <div class="aboutMe-img-container col-lg-5 order-1 order-md-1 order-lg-2">
-            <img src="./assets/img/profile-img.jpg" class="img-fluid aboutMe-img" alt="Paul Santos">
-          </div>
-        </div>
-        <div class="contact-me-btn">
+        <div class="contact-me-btn" data-aos="fade-up">
             <a class="button button-large" href="#contact">Contact Me</a>
         </div>
 
@@ -162,7 +165,7 @@
     <section id="projects" class="projects">
         <div class="container">
 
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2 class="pt-4 pt-lg-0">
                     <i class="fa-solid fa-code-branch"></i>
                     &nbsp; My Projects
@@ -170,41 +173,41 @@
             </div>
 
             <div class="row">
-                <div class="card col-10 col-md-5 mx-auto my-3 px-4 pt-4">
+                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/ecommercev1.png" alt="ecommerceApp">
                     <div class="card-body">
                         <h3 class="card-title">
-                            <a href="https://gpushopsantos.vercel.app/" target="_blank">
+                            <a href="https://gpushopsantos.vercel.app/" target="_blank" title="Check this Project">
                             <i class="fa fa-external-link"></i>
                             &nbsp; E-Commerce App
                             </a>
                         </h3>
-                        <p class="card-text">An e-commerce web app with features from register to checkout and with a different access levels between admin and user. When checking this project, please allow some time for the database to load as this only uses a free tier hosting.</p>
-                        <p class="made-with">MERN Stack</p>
+                        <p class="card-text">An e-commerce web app with features from register to checkout and with different access levels between admin and user. When checking this project, please allow some time for the database to load as this only uses a free tier hosting.</p>
+                        <p class="made-with">MongoDB, Express, React, Node</p>
                     </div>
                 </div>
 
-                <div class="card col-10 col-md-5 mx-auto my-3 px-4 pt-4">
+                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/todolistv1.png" alt="todolistApp">
                     <div class="card-body">
                         <h3 class="card-title">
-                            <a href="https://theagileworkforce.com/public/Front/img/under_development.gif" target="_blank">
+                            <a href="./assets/img/workinprogress.png" target="_blank" title="Check this Project">
                             <i class="fa fa-external-link"></i>
                             &nbsp; To-Do List App
                             </a>
                         </h3>
                         <p class="card-text">Manage your task and events in this to-do list app.</p>
-                        <p class="made-with">Python, PHP</p>
+                        <p class="made-with">Python, Django, PHP</p>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="card col-10 col-md-5 mx-auto my-3 px-4 pt-4">
+                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/portfoliov1.png" alt="portfoliov1">
                     <div class="card-body">
                         <h3 class="card-title">
-                            <a href="https://paulg-dev.github.io/portfoliov1/" target="_blank">
+                            <a href="https://paulg-dev.github.io/portfoliov1/" target="_blank" title="Check this Project">
                             <i class="fa fa-external-link"></i>
                             &nbsp; Portfoliov1
                             </a>
@@ -214,11 +217,11 @@
                     </div>
                 </div>
 
-                <div class="card col-10 col-md-5 mx-auto my-3 px-4 pt-4">
+                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/customspotifyv1.png" alt="customSpotify">
                     <div class="card-body">
                         <h3 class="card-title">
-                            <a href="https://theagileworkforce.com/public/Front/img/under_development.gif" target="_blank">
+                            <a href="./assets/img/workinprogress.png" target="_blank" title="Check this Project">
                             <i class="fa fa-external-link"></i>
                             &nbsp; Personalized Spotify
                             </a>
@@ -235,7 +238,7 @@
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
             <h2 class="pt-4 pt-lg-0">
                 <i class="fas fa-mobile-alt"></i>
                 &nbsp; Contact Me
@@ -243,7 +246,7 @@
         </div>
 
         <div class="row">         
-          <div class="col-lg-6">
+          <div class="col-lg-6 py-2" data-aos="fade-right">
             <h5 class="contact-h5">Want to get in touch?</h5>
             <h5 class="contact-h5">Opportunities?</h5>
             <h5 class="contact-h5">Partnerships?</h5>
@@ -251,7 +254,7 @@
                 <a class="button button-large" href="mailto:paul.guzon3@outlook.com">Email Me!</a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 py-2" data-aos="fade-left">
             <h5 class="contact-h5">Or you can reach me</h5>
             <h5 class="contact-h5">through these channels:</h5>
             <div class="socmed-contact-container">
@@ -277,6 +280,11 @@
     </section>
 
     <footer class="footer py-3">
+        <div class="gradient">
+            <a href="#" title="Back to Top">
+                <i class="backtop fas fa-chevron-up"></i>
+            </a>
+        </div>
         <p>Built by Paul Santos &copy; 2023</p>
     </footer>
 
@@ -286,8 +294,13 @@
 
     <!-- Vendor JS File -->
   	<script src="./assets/vendor/typed.js/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--  Main JS File -->
   	<script src="./assets/js/main.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
