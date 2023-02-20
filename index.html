@@ -14,8 +14,8 @@
     
     <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
 
-    <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
@@ -28,26 +28,26 @@
 	<header class="header" id="header">
         <div class="section-container-bg">
 
-            <nav class="navbar navbar-expand-lg navbar-dark nav-menu">
-                <a class="navbar-brand site-logo" href="#">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
                 	<img src="./assets/img/sitelogo.png" class="site-logo-img img-fluid" alt="sitelogo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="container-fluid">
-                        <ul class="nav-menu-list navbar-nav ml-auto">
-                            <li class="nav-item ml-auto py-3 pl-5">
-                                <a class="nav-menu-link" href="#aboutMe">&lt;aboutMe/&gt;</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="ms-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-auto p-2">
+                                <a class="nav-link" href="#aboutMe">&lt;aboutMe/&gt;</a>
                             </li>
-                            <li class="nav-item ml-auto py-3 pl-5">
-                                <a class="nav-menu-link" href="#projects">&lt;projects/&gt;</a>
+                            <li class="nav-item ms-auto p-2">
+                                <a class="nav-link" href="#projects">&lt;projects/&gt;</a>
                             </li>
-                            <li class="nav-item ml-auto py-3 pl-5">
-                                <a class="nav-menu-link" href="#contact">&lt;contact/&gt;</a>
+                            <li class="nav-item ms-auto p-2">
+                                <a class="nav-link" href="#contact">&lt;contact/&gt;</a>
                             </li>
-                            <li class="nav-item ml-auto py-2 pl-5">
+                            <li class="nav-item ms-auto p-2">
                                 <a class="button resume-btn" href="./assets/Santos_John_Paul_CV.pdf" target="_blank">Resume</a>
                             </li>
                         </ul>
@@ -173,7 +173,7 @@
             </div>
 
             <div class="row">
-                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
+                <div class="card col-9 col-md-5 mx-auto" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/ecommercev1.png" alt="ecommerceApp">
                     <div class="card-body">
                         <h3 class="card-title">
@@ -187,7 +187,7 @@
                     </div>
                 </div>
 
-                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
+                <div class="card col-9 col-md-5 mx-auto" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/todolistv1.png" alt="todolistApp">
                     <div class="card-body">
                         <h3 class="card-title">
@@ -203,7 +203,7 @@
             </div>
 
             <div class="row">
-                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
+                <div class="card col-9 col-md-5 mx-auto" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/portfoliov1.png" alt="portfoliov1">
                     <div class="card-body">
                         <h3 class="card-title">
@@ -217,7 +217,7 @@
                     </div>
                 </div>
 
-                <div class="card col-9 col-md-5 mx-auto my-3 px-4 pt-4" data-aos="zoom-in-up">
+                <div class="card col-9 col-md-5 mx-auto" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/customspotifyv1.png" alt="customSpotify">
                     <div class="card-body">
                         <h3 class="card-title">
@@ -288,15 +288,14 @@
         <p>Built by Paul Santos &copy; 2023</p>
     </footer>
 
-    <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <!-- Vendor JS File -->
+    <!-- Vendor JS -->
   	<script src="./assets/vendor/typed.js/typed.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!--  Main JS File -->
+    <!--  Main JS  -->
   	<script src="./assets/js/main.js"></script>
     
     <script>
