@@ -14,17 +14,19 @@
 
 :root  {
     --dark-bg: #000D16;
-    --teal-bg: #2C3E50;
+    --dgray-bg: #2F3840;
     --white-font: #ffffff;
-    --gray-font: #2f4f4f;
-    --green-font: #2D9E78;
+    --bgreen-font: #18A4A0;
     --blue-effect: #0056b3;
     --lightblue-effect: #54b3d6;
 }
 
+html, body {
+    overflow-x: hidden; 
+}
+
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden; 
 }
 
 body {
@@ -202,14 +204,14 @@ a {
     display: inline-block;
     transition: all ease .3s;
     color: var(--white-font);
-    box-shadow: inset 0 0 0 2px var(--teal-bg);
+    box-shadow: inset 0 0 0 2px var(--dgray-bg);
     background: none;
     
 }
 
 .button:hover {
     transform: scale(1.075);
-    background: var(--teal-bg);
+    background: var(--dgray-bg);
     color: var(--lightblue-effect);
 }
 
@@ -243,39 +245,9 @@ a {
     justify-content: center;
 }
 
-@media (min-width: 993px) {
-    .aboutMe-img {
-        width: 450px;
-        border-radius: 40px;
-        padding: 15px;
-    }
-
-    .aboutMe-s1 {
-        font-size: 26px;
-        color: var(--white-font);
-    }
-
-    .aboutMe-s2 {
-        font-size: 32px;
-        font-weight: 500;
-        color: var(--lightblue-effect);
-    }
-
-    .aboutMe-h4 {
-        font-size: 22px;
-        color: var(--gray-font);
-        padding-top: 20px;
-    }
-
-    .aboutMe-p {
-        font-size: 22px;
-        color: var(--white-font);
-    }
-}
-
 @media (max-width: 992px) {
     .aboutMe-img {
-        width: 350px;
+        width: 330px;
         border-radius: 40px;
         padding: 25px;
     }
@@ -297,14 +269,43 @@ a {
 
     .aboutMe-h4 {
         font-size: 18px;
-        color: var(--gray-font);
+        color: var(--bgreen-font);
         padding-top: 20px;
     }
 
     .aboutMe-p {
         font-size: 18px;
     }
+}
 
+@media (min-width: 993px) {
+    .aboutMe-img {
+        width: 430px;
+        border-radius: 40px;
+        padding: 15px;
+    }
+
+    .aboutMe-s1 {
+        font-size: 26px;
+        color: var(--white-font);
+    }
+
+    .aboutMe-s2 {
+        font-size: 32px;
+        font-weight: 500;
+        color: var(--lightblue-effect);
+    }
+
+    .aboutMe-h4 {
+        font-size: 22px;
+        color: var(--bgreen-font);
+        padding-top: 20px;
+    }
+
+    .aboutMe-p {
+        font-size: 22px;
+        color: var(--white-font);
+    }
 }
 
 .aboutMe-s,
@@ -343,7 +344,7 @@ a {
 
 .card {
     border-radius: 20px;
-    background-color: var(--teal-bg);
+    background-color: var(--dgray-bg);
     padding: 1.5rem 1.5rem 0;
     margin: 1rem 0;
 }
@@ -369,7 +370,7 @@ a {
 }
 
 .made-with {
-    color: var(--green-font);
+    color: var(--bgreen-font);
 }
 
 
@@ -381,16 +382,15 @@ a {
     text-align: center;
 }
 
+@media (max-width: 992px) {
+    .contact-h5 {
+        font-size: 18px;
+    }
+}
 
 @media (min-width: 993px) {
     .contact-h5 {
         font-size: 22px;
-    }
-}
-
-@media (max-width: 992px) {
-    .contact-h5 {
-        font-size: 18px;
     }
 }
 
