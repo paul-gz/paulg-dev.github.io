@@ -26,7 +26,7 @@
 
 <body>
 	<header class="header" id="header">
-        <div class="section-container-bg">
+        <div class="header-container-bg">
 
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">
@@ -38,19 +38,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="ms-auto">
                         <ul class="navbar-nav">
-                            <li class="nav-item ms-auto p-2">
+                            <hr class="d-lg-none text-white-50">
+                            <li class="nav-item mx-auto py-2 px-3">
                                 <a class="nav-link" href="#aboutMe">&lt;aboutMe/&gt;</a>
                             </li>
-                            <li class="nav-item ms-auto p-2">
+                            <li class="nav-item mx-auto py-2 px-3">
                                 <a class="nav-link" href="#projects">&lt;projects/&gt;</a>
                             </li>
-                            <li class="nav-item ms-auto p-2">
+                            <li class="nav-item mx-auto py-2 px-3">
                                 <a class="nav-link" href="#contact">&lt;contact/&gt;</a>
                             </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="nav-item ms-auto p-2">
+                            <hr class="d-lg-none text-white-50">
+                            <li class="nav-item mx-auto py-2 px-3">
                                 <a class="button resume-btn" href="./assets/Santos_John_Paul_CV.pdf" target="_blank">Resume</a>
                             </li>
                         </ul>
@@ -58,22 +57,24 @@
                 </div>
             </nav>
 
+            <hr class="text-white-50 py-2">
+
             <section class="landing">
                 <div class="landing-text">
 				    <h1 class="landing-text-head">#paulSantos {</h1>
-					   <p class="landing-text-item"><span class="typed" data-typed-items="full-stack-developer;, design;, build;, deploy;"></span></p>
+					   <p class="landing-text-item"><span class="typed" data-typed-items="full-stack-developer;, design( );, build( );, deploy( );"></span></p>
 					<h1 class="landing-text-head">}</h1>
                     <div class="see-projects-btn">
                         <a class="button button-large" href="#projects">Check my projects!</a>
                     </div>
                 </div>
             </section>
-
         </div>
     </header>
 
     <section id="aboutMe" class="aboutMe">
         <div class="container">
+            <hr class="d-lg-none text-white-50 py-3">
 
             <div class="section-title" data-aos="fade-up">
                 <h2 class="pt-4 pt-lg-0">
@@ -167,36 +168,39 @@
 
     <section id="projects" class="projects">
         <div class="container">
-
+            <hr class="d-lg-none text-white-50 py-3">
             <div class="section-title" data-aos="fade-up">
                 <h2 class="pt-4 pt-lg-0">
                     <i class="fa-solid fa-code-branch"></i>
                     &nbsp; My Projects
                 </h2>
+                <h5 class="mt-3">
+                 Everyone has to start somewhere. Here are the first projects I built and still working on.  
+                </h5>
             </div>
 
             <div class="row">
-                <div class="card col-9 col-md-4 mx-auto" data-aos="zoom-in-up">
+                <div class="card col-9 col-md-10 col-lg-4 mx-auto" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/ecommercev1.png" alt="ecommerceApp">
                     <div class="card-body">
                         <h3 class="card-title">
                             <a href="https://gpushopsantos.vercel.app/" target="_blank" title="Check this Project">
-                            <i class="fa fa-external-link"></i>
-                            &nbsp; E-Commerce App
+                                E-Commerce App &nbsp;
+                                <i class="fa fa-external-link"></i>
                             </a>
                         </h3>
-                        <p class="card-text">An e-commerce web app with features from register to checkout and with different access levels between admin and user. When checking this project, please allow some time for the database to load as this only uses a free tier hosting.</p>
+                        <p class="card-text text-justify">An e-commerce web app with features from register to checkout and with different access levels between admin and user. When checking this project, please allow some time for the database to load as this only uses a free tier hosting.</p>
                         <p class="made-with">MongoDB, Express, React, Node</p>
                     </div>
                 </div>
 
-                <div class="card col-9 col-md-4 mx-auto" data-aos="zoom-in-up">
+                <div class="card col-9 col-md-10 col-lg-4 mx-auto" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/todolistv1.png" alt="todolistApp">
                     <div class="card-body">
                         <h3 class="card-title">
                             <a href="./assets/img/workinprogress.png" target="_blank" title="Check this Project">
-                            <i class="fa fa-external-link"></i>
-                            &nbsp; To-Do List App
+                                To-Do List App &nbsp;
+                                <i class="fa fa-external-link"></i>
                             </a>
                         </h3>
                         <p class="card-text">Manage your task and events in this to-do list app.</p>
@@ -206,31 +210,31 @@
             </div>
 
             <div class="row">
-                <div class="card col-9 col-md-4 mx-auto" data-aos="zoom-in-up">
+                <div class="card col-9 col-md-10 col-lg-4 mx-auto" data-aos="zoom-in-up">
+                    <img class="img-fluid rounded" src="./assets/img/coursebookingv1.png" alt="coursebookingv1">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <a href="https://paulg-devcoursebooking.vercel.app/" target="_blank" title="Check this Project">
+                                Course Booking App &nbsp; 
+                                <i class="fa fa-external-link"></i>
+                            </a>
+                        </h3>
+                        <p class="card-text">My first app built using the MERN Stack. A course booking app for online programming classes.</p>
+                        <p class="made-with">MongoDB, Express, React, Node</p>
+                    </div>
+                </div>
+
+                <div class="card col-9 col-md-10 col-lg-4 mx-auto" data-aos="zoom-in-up">
                     <img class="img-fluid rounded" src="./assets/img/portfoliov1.png" alt="portfoliov1">
                     <div class="card-body">
                         <h3 class="card-title">
                             <a href="https://paulg-dev.github.io/portfoliov1/" target="_blank" title="Check this Project">
-                            <i class="fa fa-external-link"></i>
-                            &nbsp; Portfoliov1
+                                Portfoliov1 &nbsp; 
+                                <i class="fa fa-external-link"></i>
                             </a>
                         </h3>
                         <p class="card-text">My initial attempt on building a portfolio made during my first coding bootcamp.</p>
                         <p class="made-with">HTML, CSS, Bootstrap</p>
-                    </div>
-                </div>
-
-                <div class="card col-9 col-md-4 mx-auto" data-aos="zoom-in-up">
-                    <img class="img-fluid rounded" src="./assets/img/customspotifyv1.png" alt="customSpotify">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            <a href="./assets/img/workinprogress.png" target="_blank" title="Check this Project">
-                            <i class="fa fa-external-link"></i>
-                            &nbsp; Custom Spotify
-                            </a>
-                        </h3>
-                        <p class="card-text">A Personalized web view for Spotify user statistics.</p>
-                        <p class="made-with">Node, React, Spotify Web API</p>
                     </div>
                 </div>
             </div>
@@ -240,7 +244,7 @@
 
     <section id="contact" class="contact">
       <div class="container">
-
+        <hr class="d-lg-none text-white-50 py-3">
         <div class="section-title" data-aos="fade-up">
             <h2 class="pt-4 pt-lg-0">
                 <i class="fas fa-mobile-alt"></i>
@@ -281,15 +285,17 @@
 
       </div>
     </section>
+    
+        <footer class="footer py-3">
+            <div class="pb-3 footer-container-bg">
+                <hr class="text-white-50 py-2">
+                <a href="#" title="Back to Top">
+                    <i class="backtop fas fa-chevron-up"></i>
+                </a>
+            </div>
+            <p>Built by Paul Santos &copy; 2023</p>
+        </footer>
 
-    <footer class="footer py-3">
-        <div class="pb-3">
-            <a href="#" title="Back to Top">
-                <i class="backtop fas fa-chevron-up"></i>
-            </a>
-        </div>
-        <p>Built by Paul Santos &copy; 2023</p>
-    </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
