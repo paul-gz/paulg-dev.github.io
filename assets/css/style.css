@@ -158,7 +158,7 @@ a {
         list-style-type: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .header {
         background: url("../img/hero-bg.jpg") center no-repeat;
         background-size: cover;
@@ -178,7 +178,7 @@ a {
     }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .landing-text {
         padding-left: 250px;
         min-width: 750px;
@@ -248,13 +248,71 @@ a {
 }
 
 .aboutMe-img {
-        box-shadow: 0 8px 10px -4px var(--lightblue-effect);
+    box-shadow: 0 8px 10px -4px var(--lightblue-effect);
+    border-radius: 30px;
+}
+
+.hi-there,
+.aboutMe-s,
+.aboutMe-p,
+.technologies-header {
+    margin-bottom: 20px;
+}
+
+.hi-there {
+    margin-top: 25px;
+}
+
+.aboutMe-p, .aboutMe-s1 {
+    color: var(--white-font);
+}
+
+.aboutMe-s2 {
+    color: var(--lightblue-effect);
+}
+
+.hi-there, .technologies-header {
+    color: var(--bgreen-font);
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tech-icon {
+    padding: 5px;
+    width: 38px;
+}
+
+
+@media (max-width: 767px) {
+    .aboutMe-img {
+        width: 230px;
     }
 
-@media (max-width: 992px) {
+    .aboutMe-p {
+        line-height: 22px;
+    }
+
+    .aboutMe-s2 {
+        font-size: 22px;
+    }
+
+    .aboutMe-p, .aboutMe-s1 {
+        font-size: 17px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
     .aboutMe-img {
         width: 315px;
-        border-radius: 40px;
     }
 
     .aboutMe-text {
@@ -263,84 +321,81 @@ a {
 
     .aboutMe-s1 {
         font-size: 22px;
-        color: var(--white-font);
     }
 
     .aboutMe-s2 {
         font-size: 28px;
         font-weight: 500;
-        color: var(--lightblue-effect);
     }
 
-    .aboutMe-h4 {
-        font-size: 18px;
-        color: var(--bgreen-font);
-        padding-top: 20px;
+    .hi-there, .technologies-header {
+        font-size: 23px;
     }
 
     .aboutMe-p {
-        font-size: 18px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .tech-icon {
+        width: 42px;
     }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .aboutMe-img {
-        width: 415px;
-        border-radius: 40px;
+        width: 315px;
     }
 
     .aboutMe-s1 {
-        font-size: 26px;
-        color: var(--white-font);
+        font-size: 20px;
     }
 
     .aboutMe-s2 {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 500;
-        color: var(--lightblue-effect);
-    }
-
-    .aboutMe-h4 {
-        font-size: 22px;
-        color: var(--bgreen-font);
-        padding-top: 20px;
     }
 
     .aboutMe-p {
-        font-size: 22px;
-        color: var(--white-font);
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .aboutMe-text {
+        padding: 15px 20px 10px 20px;
+    }
+
+    .tech-icon {
+        padding: 3px;
+        width: 35px;
+    }
+
+    .technologies-header {
+        padding-top: 10px;
     }
 }
 
-.aboutMe-s,
-.aboutMe-h4,
-.aboutMe-p {
-    padding-bottom: 15px;
+@media (min-width: 1200px) {
+    .hi-there, .technologies-header {
+        font-size: 25px;
+    }
+
+    .aboutMe-p {
+        font-size: 20px;
+    }
 }
 
-.technologies {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around    
+@media (min-width: 1400px) {
+    .aboutMe-2 {
+        font-size: 22px;
+    }
+
+    .tech-icon {
+        padding: 5px;
+        width: 40px;
+    }
 }
 
-.html5,
-.css3,
-.bootstrap,
-.javascript,
-.git,
-.mongodb,
-.postman,
-.express,
-.react,
-.node,
-.php,
-.python,
-.django {
-    padding: 5px;
-    width: 45px;
-}
 
 /*----------
 # Projects
@@ -360,29 +415,35 @@ a {
     flex-direction: column;
 }
 
-@media (max-width: 415px) {
-    .card-title {
-        font-size: 20px;
-    }
-
-    .fa-external-link {
-        font-size: 16px;
-    }
+.projects-intro {
+    font-size: 18px;
 }
 
-@media (min-width: 416px) {
+@media (max-width: 767px) {
     .card-title {
-        font-size: 26px;
-    }
-
-    .fa-external-link {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
 .card-title, .made-with {
     text-align: center;
     padding: 6px 0px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .projects-intro {
+        margin: 0px 100px;
+    }
+
+    .card-title {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-title {
+        font-size: 23px;
+    }
 }
 
 .card-text {
@@ -404,13 +465,13 @@ a {
     text-align: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .contact-h5 {
         font-size: 18px;
     }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .contact-h5 {
         font-size: 22px;
     }
