@@ -26,4 +26,15 @@
     });
   }
 
+  /*Navbar auto close upon select*/
+  const navLinks = document.querySelectorAll('.navbar-nav > li > a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      navbarToggler.classList.add('collapsed');
+      navbarCollapse.classList.remove('show');
+    });
+  });
+
 })()
