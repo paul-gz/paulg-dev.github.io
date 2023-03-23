@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--white-font);
 }
 
@@ -50,8 +50,13 @@ a {
 
 .section-title {
     text-align: center;
-    font-size: 36px;
-    padding-bottom: 35px;
+    font-size: 38px;
+}
+
+.section-title-row {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
 }
 
 .aboutMe,
@@ -104,9 +109,14 @@ a {
     position: relative;
 }
 
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
 .nav-link {
     color: var(--white-font);
-    font-size: 20px;
+    font-size: 18px;
     transition: all ease .3s;
 }
 
@@ -154,13 +164,9 @@ a {
     padding: 0px;
 }
 
-.landing-text-item {
-        list-style-type: none;
-}
-
 @media (max-width: 991px) {
     .header {
-        background: url("../img/hero-bg.jpg") center no-repeat;
+        background: var(--dark-bg) url("../img/hero-bg.jpg") center no-repeat;
         background-size: cover;
     }
 
@@ -169,7 +175,7 @@ a {
     }
 
     .landing-text-head {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .landing-text-item {  
@@ -185,7 +191,7 @@ a {
     }
 
     .landing-text-head {
-        font-size: 60px;
+        font-size: 56px;
     }
 
     .landing-text-item {  
@@ -223,8 +229,8 @@ a {
 }
 
 .resume-btn {
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 13px 26px;
 }
 
 .see-projects-btn,
