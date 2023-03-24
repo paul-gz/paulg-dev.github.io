@@ -14,7 +14,7 @@
 
 :root  {
     --dark-bg: #000D16;
-    --dgray-bg: #2F3840;
+    --dgray-bg: #161b22;
     --white-font: #ffffff;
     --bgreen-font: #18A4A0;
     --blue-effect: #0056b3;
@@ -22,15 +22,13 @@
 }
 
 html, body {
-    overflow-x: hidden; 
-}
-
-html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Inter', sans-serif;
+    background: var(--dgray-bg);
     color: var(--white-font);
 }
 
@@ -41,16 +39,22 @@ a {
 /*----------
 # Sections
 ----------*/
+.navbar-container,
+.footer-container {
+    background: rgba(0, 13, 22, 85%);
+    padding: 0.75rem 0;
+}
 
-.header-container-bg, .footer-container-bg {
-    width: 95%;
+.navbar,
+.footer {
+    width: 85%;
     max-width: 1650px;
     margin: 0 auto;
 }
 
 .section-title {
     text-align: center;
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
 .section-title-row {
@@ -61,9 +65,8 @@ a {
 
 .aboutMe,
 .projects,
-.contact,
-.footer {
-    background-color: var(--dark-bg);
+.contact {
+    background: var(--dgray-bg);
 }
 
 .aboutMe,
@@ -73,7 +76,7 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 25px;
+    padding: 1.5rem;
 }
 
 .contact {
@@ -81,19 +84,15 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 165px);
+    min-height: calc(100vh - 110px);
     padding: 0px;
-}
-
-.footer {
-    text-align: center;
 }
 
 /*----------
 # Navbar
 ----------*/
-.navbar {
-    padding-top: 40px;
+.navbar-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 70%);
 }
 
 .navbar-brand {
@@ -116,7 +115,7 @@ a {
 
 .nav-link {
     color: var(--white-font);
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: all ease .3s;
 }
 
@@ -150,7 +149,7 @@ a {
 .header {
   width: 100%;
   min-height: 100vh;
-  background: var(--dark-bg) url("../img/hero-bg.jpg") top left no-repeat;
+  background: var(--dgray-bg) url("../img/hero-bg.jpg") top left no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -160,13 +159,13 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 91.5px);
+    min-height: calc(100vh - 85px);
     padding: 0px;
 }
 
 @media (max-width: 991px) {
     .header {
-        background: var(--dark-bg) url("../img/hero-bg.jpg") center no-repeat;
+        background: var(--dgray-bg) url("../img/hero-bg.jpg") center no-repeat;
         background-size: cover;
     }
 
@@ -175,11 +174,11 @@ a {
     }
 
     .landing-text-head {
-        font-size: 38px;
+        font-size: 2.375rem;
     }
 
     .landing-text-item {  
-        font-size: 28px;
+        font-size: 1.75rem;
         padding-left: 60px;
     }
 }
@@ -191,11 +190,11 @@ a {
     }
 
     .landing-text-head {
-        font-size: 56px;
+        font-size: 3.5rem;
     }
 
     .landing-text-item {  
-        font-size: 40px;
+        font-size: 2.5rem;
         padding-left: 90px;
     }
 }
@@ -210,8 +209,8 @@ a {
     transition: all ease .3s;
     color: rgba(235, 245, 255, 90%);
     box-shadow: 
-        inset 0 0 0 2px var(--dgray-bg),
-        5px 6px 8px -4px var(--dgray-bg);
+        inset 0 0 0 1px rgba(235, 245, 255, 60%),
+        2px 4px 6px -4px rgba(235, 245, 255, 60%);
     background: none;
     
 }
@@ -224,12 +223,12 @@ a {
 }
 
 .button-large {
-    font-size: 22px;
+    font-size: 1.375rem;
     padding: 20px 40px;
 }
 
 .resume-btn {
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 13px 26px;
 }
 
@@ -252,13 +251,7 @@ a {
 .aboutMe-img {
     box-shadow: 0 8px 10px -4px var(--lightblue-effect);
     border-radius: 30px;
-}
-
-.overlay {
-    position: absolute;
-    background: rgba(0, 13, 22, 10%) !important;
-    width: 100%;
-    height: 100%;
+    filter: brightness(90%)
 }
 
 .hi-there,
@@ -283,7 +276,7 @@ a {
 .hi-there, .technologies-header {
     color: var(--bgreen-font);
     padding-top: 15px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .technologies {
@@ -298,7 +291,6 @@ a {
     width: 38px;
 }
 
-
 @media (max-width: 767px) {
     .aboutMe-img {
         width: 230px;
@@ -309,17 +301,16 @@ a {
     }
 
     .aboutMe-s2 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .aboutMe-p, .aboutMe-s1 {
-        font-size: 17px;
+        font-size: 1.125rem;
     }
 
 }
 
-
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
     .aboutMe-img {
         width: 315px;
     }
@@ -329,49 +320,45 @@ a {
     }
 
     .aboutMe-s1 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .aboutMe-s2 {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 500;
     }
 
-    .hi-there, .technologies-header {
-        font-size: 23px;
-    }
-
     .aboutMe-p {
-        font-size: 19px;
+        font-size: 1.125rem;
         line-height: 24px;
     }
 
     .tech-icon {
         width: 42px;
     }
+
+    .hi-there, .technologies-header {
+        font-size: 1.375rem;
+    }
 }
 
 @media (min-width: 992px) {
-    .aboutMe-img {
-        width: 315px;
+    .aboutMe-text {
+        padding: 15px 20px 10px 20px;
     }
 
     .aboutMe-s1 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .aboutMe-s2 {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
     }
 
     .aboutMe-p {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 23px;
-    }
-
-    .aboutMe-text {
-        padding: 15px 20px 10px 20px;
     }
 
     .tech-icon {
@@ -386,17 +373,17 @@ a {
 
 @media (min-width: 1200px) {
     .hi-there, .technologies-header {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     .aboutMe-p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media (min-width: 1400px) {
     .aboutMe-2 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .tech-icon {
@@ -405,18 +392,17 @@ a {
     }
 }
 
-
 /*----------
 # Projects
 ----------*/
-
 .card {
-    border-radius: 20px;
-    background: rgb(22, 27, 34, 90%);
-    border: rgba(235, 245, 255, 25%) 1px inset;
-    padding: 1.5rem 1.5rem 0;
-    margin: 1rem 0;
-    box-shadow: 0 7px 9px -4px var(--blue-effect);
+    background: rgba(33, 37, 41, 95%);
+    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(13px);
+    border-radius: 0.5rem;
+    padding: 24px 32px 0;
+    margin: 2rem 0;
+    border: 0.5px solid rgba(255, 255, 255, 20%);
 }
 
 .card:hover {
@@ -429,13 +415,13 @@ a {
 }
 
 .projects-intro {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: rgba(235, 245, 255, 60%);
 }
 
 @media (max-width: 767px) {
     .card-title {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -444,19 +430,19 @@ a {
     padding: 6px 0px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
     .projects-intro {
         margin: 0px 100px;
     }
 
     .card-title {
-        font-size: 23px;
+        font-size: 1.375rem;
     }
 }
 
 @media (min-width: 992px) {
     .card-title {
-        font-size: 23px;
+        font-size: 1.5rem;
     }
 }
 
@@ -475,7 +461,6 @@ a {
 /*----------
 # Contact
 ----------*/
-
 .contact-h5 {
     text-align: center;
     color: rgba(235, 245, 255, 60%);
@@ -483,13 +468,13 @@ a {
 
 @media (max-width: 991px) {
     .contact-h5 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
 @media (min-width: 992px) {
     .contact-h5 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 }
 
@@ -512,7 +497,7 @@ a {
 
 .socmed-text {
      color:var(--white-font);
-     font-size: 19px;
+     font-size: 1.125rem;
      padding-left: 3px;
      color: rgba(235, 245, 255, 90%);
 }
@@ -520,8 +505,12 @@ a {
 /*----------
 # Footer
 ----------*/
+.footer-container {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 70%);
+}
+
 .backtop {
-    font-size: 38px;
+    font-size: 2.375rem;
     transition: all ease .3s;
     color: var(--lightblue-effect);
 }
