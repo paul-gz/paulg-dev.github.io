@@ -1,30 +1,20 @@
+/*Animate on Scroll*/
+AOS.init();
 
 (function() {
   "use strict";
 
-  /*Easy selector helper function*/
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
-  }
-
-  /*Landing typing effect*/
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 50,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
+  /*Landing section typing effect*/
+  var typed = new Typed('#typed-text', {
+    strings: ['<em>full-stack-web-dev;</em>',
+      '<em>design:</em>&nbsp; 100%;',
+      '<em>build:</em>&nbsp; 100%;',
+      '<em>deploy:</em>&nbsp; auto;'],
+    typeSpeed: 50,
+    // backSpeed: 30,
+    backDelay: 1800,
+    loop: true
+  });
 
   /*Navbar auto close upon select*/
   const navLinks = document.querySelectorAll('.navbar-nav > li > a');

@@ -163,6 +163,10 @@ a {
     padding: 0px;
 }
 
+.curly-braces {
+    font-weight: 400;
+}
+
 @media (max-width: 991px) {
     .header {
         background: var(--dgray-bg) url("../img/hero-bg.png") center no-repeat;
