@@ -129,7 +129,7 @@ a {
     margin: 10px auto;
     position: absolute;
     width: 0%;
-    transition: width .3s;;
+    transition: width .3s;
 }
 
 .nav-link:hover:after {
@@ -149,7 +149,7 @@ a {
 .header {
   width: 100%;
   min-height: 100vh;
-  background: var(--dgray-bg) url("../img/hero-bg.jpg") top left no-repeat;
+  background: var(--dgray-bg) url("../img/hero-bg.png") bottom left no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -165,7 +165,7 @@ a {
 
 @media (max-width: 991px) {
     .header {
-        background: var(--dgray-bg) url("../img/hero-bg.jpg") center no-repeat;
+        background: var(--dgray-bg) url("../img/hero-bg.png") center no-repeat;
         background-size: cover;
     }
 
@@ -185,8 +185,8 @@ a {
 
 @media (min-width: 992px) {
     .landing-text {
-        padding-left: 250px;
         min-width: 750px;
+        padding-left: 270px;
     }
 
     .landing-text-head {
@@ -211,14 +211,15 @@ a {
     box-shadow: 
         inset 0 0 0 1px rgba(235, 245, 255, 60%),
         2px 4px 6px -4px rgba(235, 245, 255, 60%);
-    background: none;
+    background: var(--dgray-bg);
+    /* background: none; */
     
 }
 
 .button:hover {
     transform: scale(1.075);
     background: var(--dgray-bg);
-    background: linear-gradient(45deg, rgba(44, 62, 80, 98%), rgba(47, 56, 64, 98%));
+    background: rgba(0, 13, 22, 95%);
     color: var(--lightblue-effect);
 }
 
@@ -242,18 +243,6 @@ a {
 /*----------
 # About Me
 ----------*/
-.aboutMe-img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.aboutMe-img {
-    box-shadow: 0 8px 10px -4px var(--lightblue-effect);
-    border-radius: 30px;
-    filter: brightness(90%)
-}
-
 .hi-there,
 .aboutMe-s,
 .aboutMe-p,
@@ -275,8 +264,18 @@ a {
 
 .hi-there, .technologies-header {
     color: var(--bgreen-font);
-    padding-top: 15px;
     font-size: 1.25rem;
+}
+
+.fa-briefcase,
+.fa-file-code,
+.fa-gears,
+.fa-palette {
+    color: var(--white-font);
+}
+
+.tech-card-body {
+    padding: 0 16px 24px;
 }
 
 .technologies {
@@ -289,13 +288,14 @@ a {
 .tech-icon {
     padding: 5px;
     width: 38px;
+    transition: all ease .3s;
+}
+
+.tech-icon:hover {
+    transform: scale(2.5);
 }
 
 @media (max-width: 767px) {
-    .aboutMe-img {
-        width: 230px;
-    }
-
     .aboutMe-p {
         line-height: 22px;
     }
@@ -311,10 +311,6 @@ a {
 }
 
 @media (min-width: 768px) {
-    .aboutMe-img {
-        width: 315px;
-    }
-
     .aboutMe-text {
         padding: 14px 28px 0px;
     }
@@ -334,7 +330,7 @@ a {
     }
 
     .tech-icon {
-        width: 42px;
+        width: 48px;
     }
 
     .hi-there, .technologies-header {
@@ -405,9 +401,9 @@ a {
     border: 0.5px solid rgba(255, 255, 255, 20%);
 }
 
-.card:hover {
+/* .card:hover {
     transform: scale(1.01) !important;
-}
+} */
 
 .card-body {
     display: flex;
@@ -496,7 +492,6 @@ a {
 }
 
 .socmed-text {
-     color:var(--white-font);
      font-size: 1.125rem;
      padding-left: 3px;
      color: rgba(235, 245, 255, 90%);
