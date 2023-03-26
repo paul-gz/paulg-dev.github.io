@@ -1,18 +1,16 @@
-/*Animate on Scroll*/
-AOS.init();
 
 (function() {
   "use strict";
 
+  /*Animate on Scroll*/
+  AOS.init();
+
   /*Landing section typing effect*/
   var typed = new Typed('#typed-text', {
-    strings: ['<em>full-stack-web-dev;</em>',
-      '<em>design:</em>&nbsp; 100%;',
-      '<em>build:</em>&nbsp; 100%;',
-      '<em>deploy:</em>&nbsp; auto;'],
+    strings: ['<em>design:</em>&nbsp; `100%;` <br/> <em>build:</em>&nbsp; `100%;` <br/> <em>deploy:</em>&nbsp; `auto;`'],
     typeSpeed: 50,
-    // backSpeed: 30,
-    backDelay: 1800,
+    backDelay: 3000,
+    backSpeed: 15,
     loop: true
   });
 
@@ -25,6 +23,15 @@ AOS.init();
       navbarToggler.classList.add('collapsed');
       navbarCollapse.classList.remove('show');
     });
+  });
+
+  /*Tooltip on hover*/
+  tippy('.tech-icon, .backtop, .project-link', {
+    content: function(reference) {
+      const content = reference.getAttribute('alt');
+      return content;
+    },
+    offset: [0, 30],
   });
 
 })()
