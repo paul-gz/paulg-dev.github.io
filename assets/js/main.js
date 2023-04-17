@@ -8,6 +8,7 @@
   /*Landing section typing effect*/
   var typed = new Typed('#typed-text', {
     strings: ['<em>design:</em>&nbsp; `100%;` <br/> <em>build:</em>&nbsp; `100%;` <br/> <em>deploy:</em>&nbsp; `auto;`'],
+    startDelay: 1500,
     typeSpeed: 50,
     backDelay: 3000,
     backSpeed: 15,
